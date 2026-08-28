@@ -1,322 +1,137 @@
-# AI Assistant Hub
+# AI Workplace Productivity Assistant
 
-Build a modern, responsive SaaS web application called AI Workplace Productivity Assistant.
+## Project Overview
 
-PROJECT GOAL
+**AI Workplace Productivity Assistant** is a modern, responsive SaaS-style web application designed to help professionals complete common workplace tasks more efficiently using AI.
 
-Create a clean and professional frontend-only AI productivity dashboard that helps professionals complete common workplace tasks using AI. The application must be simple, intuitive, visually polished, and work without requiring users to log in or register.
+The application provides three main productivity tools: a **Smart Email Generator**, an **AI Research Assistant**, and an **AI Workplace Chatbot**. The interface is designed to be simple, professional, and easy to use across desktop, tablet, and mobile devices.
 
-IMPORTANT TECHNICAL REQUIREMENTS
+This project is **frontend-only** and does not require user authentication, registration, a backend, or a database.
 
-Frontend-only application.
+## Features Implemented
 
-No backend.
+### Smart Email Generator
 
-No database.
+* Generate professional workplace emails.
+* Choose between different communication tones:
 
-No authentication, login, or registration.
+  * Formal
+  * Friendly
+  * Persuasive
+* Choose the desired email length.
+* Edit generated email content.
+* Copy, regenerate, or clear generated emails.
+* Use suggested prompts for common workplace situations.
 
-Do not create user accounts or profiles.
+### AI Research Assistant
 
-Keep the application lightweight and suitable for a free Lovable account.
+* Enter a topic or article for analysis.
+* Generate summaries and key information.
+* View:
 
-Use realistic demo/sample AI responses where an actual AI API is not available.
+  * Summary
+  * Key Points
+  * Insights
+  * Recommendations
+* Edit generated results.
+* Copy, regenerate, or clear research results.
+* Use suggested research prompts.
 
-Do not require paid APIs or external services for the core interface.
+### AI Workplace Chatbot
 
-All generated content should be editable by the user.
+* Interactive workplace-focused chat interface.
+* Suggested prompts for common workplace tasks.
+* Send and receive messages in a conversational interface.
+* Clear the conversation.
+* Responsive chat layout for different screen sizes.
 
-Make the application fully responsive on desktop, tablet, and mobile.
+### Dashboard & User Interface
 
-DESIGN STYLE
+* Modern SaaS-style dashboard.
+* Sidebar navigation.
+* Responsive design for desktop, tablet, and mobile.
+* Bright link-pink branding.
+* Cards, buttons, icons, and clean typography.
+* Loading and empty states.
+* User-friendly validation and feedback messages.
 
-Create a modern SaaS dashboard inspired by polished productivity applications.
+### Responsible AI
 
-Use:
+The application includes a Responsible AI disclaimer reminding users that AI-generated information may contain errors and should be reviewed and verified before being used for important workplace communication or decisions.
 
-Bright link-pink as the primary accent colour.
+## Technologies and Tools Used
 
-White and very light neutral backgrounds.
+* **HTML5** – Structure and layout.
+* **CSS3** – Styling, responsive design, and visual presentation.
+* **JavaScript** – User interactions and application functionality.
+* **React** – Component-based user interface development.
+* **Lovable** – AI-assisted application development and project generation.
+* **Responsive Web Design** – Ensures compatibility across desktop, tablet, and mobile devices.
 
-Dark charcoal text for readability.
+The project does not use:
 
-Subtle borders and soft shadows.
+* Backend services
+* Database systems
+* User authentication
+* User registration
+* Paid external APIs
 
-Rounded cards and buttons.
+## Setup Instructions
 
-Modern, clean typography.
+### Prerequisites
 
-Professional icons.
+Before running the project, make sure you have:
 
-Generous spacing.
+* Node.js installed.
+* npm installed.
+* A code editor such as Visual Studio Code.
 
-Minimal but attractive animations and hover effects.
+### Installation
 
-The design should feel professional, intelligent, modern, and trustworthy, rather than playful or overly colourful.
+1. Clone or download the project repository.
 
-MAIN DASHBOARD
+```bash
+git clone <repository-url>
+```
 
-Create a dashboard layout with:
+2. Open the project folder:
 
-Left Sidebar
+```bash
+cd ai-workplace-productivity-assistant
+```
 
-AI Workplace Productivity Assistant logo/name.
+3. Install the project dependencies:
 
-Dashboard
+```bash
+npm install
+```
 
-Smart Email Generator
+4. Start the development server:
 
-Research Assistant
-
-AI Workplace Chat
-
-Settings
-
-At the bottom of the sidebar, include a small Responsible AI notice.
-
-Main Content
-Show:
-
-Welcome heading: "Work smarter with AI"
-
-Short subtitle explaining that the assistant helps with emails, research, and workplace tasks.
-
-Three feature cards:
-
-Smart Email Generator
-
-AI Research Assistant
-
-AI Workplace Chat
-
-Each card should include an icon, short description, and button to open the feature.
-
-Also include a Quick Actions section with buttons such as:
-
-Write an Email
-
-Summarise a Topic
-
-Ask AI
-
-1. SMART EMAIL GENERATOR
-
-Create a dedicated email-generation page.
-
-Include:
-
-Recipient field
-
-Subject field
-
-Email purpose/message textarea
-
-Tone selector:
-
-Formal
-
-Friendly
-
-Persuasive
-
-Optional length selector:
-
-Short
-
-Medium
-
-Detailed
-
-"Generate Email" button
-
-After generation, display the AI response inside a professional editable text editor/card.
-
-Include buttons:
-
-Regenerate
-
-Copy
-
-Edit
-
-Clear
-
-Add a small section called Suggested Prompts with examples such as:
-
-Request a meeting
-
-Follow up on an application
-
-Ask for assistance
-
-Apologise professionally
-
-Send a project update
-
-2. AI RESEARCH ASSISTANT
-
-Create a research assistant page.
-
-Include:
-
-Topic/article input area.
-
-Button: "Research & Summarise"
-
-Options for:
-
-Quick Summary
-
-Detailed Summary
-
-Key Insights
-
-Recommendations
-
-Display results in clearly separated sections:
-
-Summary
-
-Key Points
-
-Insights
-
-Recommendations
-
-Make the generated content editable and include:
-
-Copy
-
-Edit
-
-Regenerate
-
-Clear
-
-Include suggested research prompts such as:
-
-"Summarise this topic for a beginner."
-
-"Give me the key points from this article."
-
-"What are the main recommendations?"
-
-"Explain the workplace impact of this topic."
-
-3. AI WORKPLACE CHAT
-
-Create a modern chatbot interface.
-
-Include:
-
-Conversation area.
-
-User and AI message bubbles.
-
-Message input at the bottom.
-
-Send button.
-
-Clear conversation button.
-
-The chatbot should be presented as a workplace productivity assistant.
-
-Include suggested prompts above the input:
-
-"Help me plan my workday."
-
-"Write a professional response to this message."
-
-"Help me prepare for a meeting."
-
-"Create a task list for my project."
-
-"Improve this workplace message."
-
-Use realistic sample AI responses so the interface feels functional even without a backend or paid AI API.
-
-EDITABLE AI OUTPUTS
-
-All AI-generated results should be presented in editable text areas or editable content cards.
-
-Users should be able to:
-
-Edit generated text.
-
-Copy the output.
-
-Regenerate the response.
-
-Clear the output.
-
-RESPONSIBLE AI
-
-Include a clearly visible but unobtrusive disclaimer:
-
-"Responsible AI: AI-generated content may contain errors or inaccuracies. Always review and verify information before using it for important workplace decisions or communication."
-
-RESPONSIVE DESIGN
-
-The application must work smoothly on:
-
-Desktop
-
-Tablet
-
-Mobile
-
-On smaller screens:
-
-Convert the sidebar into a mobile navigation menu.
-
-Make cards stack vertically.
-
-Ensure buttons and text fields remain easy to use.
-
-Keep the chatbot interface comfortable on mobile.
-
-USER EXPERIENCE
-
-Add:
-
-Loading states when generating content.
-
-Empty states before a user starts a task.
-
-Helpful validation messages when required fields are empty.
-
-Success feedback when content is copied.
-
-Smooth page transitions and subtle animations.
-
-Clear visual hierarchy.
-
-OVERALL FEEL
-
-The final application should look like a real professional AI SaaS product, not a basic school project.
-
-Prioritise:
-simplicity + professionalism + usability + bright link-pink branding + responsive design.
-
-Do not add authentication, payment systems, databases, backend functionality, or unnecessary advanced features.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/75f3dbb9-5797-4aa9-a961-70b6899b7e05).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+5. Open the local development URL provided in the terminal, typically:
+
+```text
+http://localhost:5173
+```
+
+### Using the Application
+
+Once the application is running:
+
+1. Open the dashboard.
+2. Select **Smart Email Generator**, **AI Research Assistant**, or **AI Workplace Chat** from the sidebar.
+3. Enter your information or select a suggested prompt.
+4. Generate or interact with the content.
+5. Edit, copy, regenerate, or clear AI-generated results as needed.
+
+## Project Purpose
+
+The purpose of this project is to demonstrate how AI-powered productivity tools can be presented in a simple, accessible, and professional workplace application. It focuses on improving communication, research, and everyday productivity through an intuitive user interface.
+
+## Responsible AI
+
+AI-generated content should not be treated as automatically accurate or authoritative. Users should review, verify, and edit generated information before using it for important workplace communication, research, or decision-making.
